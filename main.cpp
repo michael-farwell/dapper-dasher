@@ -1,6 +1,18 @@
-#include <iostream>
+#include "raylib.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    // Window dimensions
+    const int width{512};
+    const int height{380};
+    InitWindow(width, height, "Dapper Dasher");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        ClearBackground(WHITE);
+
+        // Game Logic
+
+        EndDrawing();
+    }
 }
